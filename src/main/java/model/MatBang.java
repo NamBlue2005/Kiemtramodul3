@@ -14,7 +14,6 @@ public class MatBang {
     private Date ngayBatDau;
     private Date ngayKetThuc;
 
-    // Constructor
     public MatBang(int id, String maMatBang, String trangThai, double dienTich, int tang, String loaiMatBang,
                    double giaThue, String moTaChiTiet, Date ngayBatDau, Date ngayKetThuc) {
         this.id = id;
@@ -29,7 +28,6 @@ public class MatBang {
         this.ngayKetThuc = ngayKetThuc;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }

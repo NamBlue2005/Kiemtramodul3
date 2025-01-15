@@ -1,11 +1,11 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Building</title>
+    <title>Thêm Tòa Nhà Mới</title>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -150,47 +150,47 @@
 </head>
 <body>
 <header>
-    <h1>Add New Building</h1>
+    <h1>Thêm Tòa Nhà Mới</h1>
     <nav>
-        <a href="buildings">Back to List</a>
+        <a href="buildings">Quay lại danh sách</a>
     </nav>
 </header>
 
 <section class="form-container">
-    <form action="addBuilding" method="POST">
-        <label for="code">Building Code:</label>
+    <form action="addbuilding" method="POST">
+        <label for="code">Mã Tòa Nhà:</label>
         <input type="text" id="code" name="code" required>
 
-        <label for="status">Status:</label>
+        <label for="status">Trạng Thái:</label>
         <input type="text" id="status" name="status" required>
 
-        <label for="area">Area (m²):</label>
+        <label for="area">Diện Tích (m²):</label>
         <input type="number" id="area" name="area" required min="20">
 
-        <label for="floor">Floor:</label>
+        <label for="floor">Số Tầng:</label>
         <input type="number" id="floor" name="floor" required>
 
-        <label for="type">Type:</label>
+        <label for="type">Loại:</label>
         <input type="text" id="type" name="type" required>
 
-        <label for="rentPrice">Rent Price:</label>
+        <label for="rentPrice">Giá Thuê:</label>
         <input type="number" id="rentPrice" name="rentPrice" required min="1000000">
 
-        <label for="description">Description:</label>
+        <label for="description">Mô Tả:</label>
         <textarea id="description" name="description" rows="4" required></textarea>
 
-        <label for="startDate">Start Date:</label>
+        <label for="startDate">Ngày Bắt Đầu:</label>
         <input type="date" id="startDate" name="startDate" required>
 
-        <label for="endDate">End Date:</label>
+        <label for="endDate">Ngày Kết Thúc:</label>
         <input type="date" id="endDate" name="endDate" required>
 
-        <button type="submit">Add Building</button>
+        <button type="submit">Thêm Tòa Nhà</button>
     </form>
 </section>
 
 <footer>
-    <p>&copy; 2025 Building Management System</p>
+    <p>&copy; 2025 Hệ Thống Quản Lý Tòa Nhà</p>
 </footer>
 </body>
 </html>

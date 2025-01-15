@@ -14,7 +14,6 @@ public class Building {
     private Date startDate;
     private Date endDate;
 
-    // Constructor
     public Building(int id, String code, String status, double area, int floor, String type, double rentPrice,
                     String description, Date startDate, Date endDate) {
         this.id = id;
@@ -29,34 +28,83 @@ public class Building {
         this.endDate = endDate;
     }
 
-    // Getters and Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public int getId() {
+        return id;
+    }
 
-    public String getCode() { return code; }
-    public void setCode(String code) { this.code = code; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public String getCode() {
+        return code;
+    }
 
-    public double getArea() { return area; }
-    public void setArea(double area) { this.area = area; }
+    public void setCode(String code) {
+        this.code = code;
+    }
 
-    public int getFloor() { return floor; }
-    public void setFloor(int floor) { this.floor = floor; }
+    public String getStatus() {
+        return status;
+    }
 
-    public String getType() { return type; }
-    public void setType(String type) { this.type = type; }
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-    public double getRentPrice() { return rentPrice; }
-    public void setRentPrice(double rentPrice) { this.rentPrice = rentPrice; }
+    public double getArea() {
+        return area;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public void setArea(double area) {
+        this.area = area;
+    }
 
-    public Date getStartDate() { return startDate; }
-    public void setStartDate(Date startDate) { this.startDate = startDate; }
+    public int getFloor() {
+        return floor;
+    }
 
-    public Date getEndDate() { return endDate; }
-    public void setEndDate(Date endDate) { this.endDate = endDate; }
+    public void setFloor(int floor) {
+        this.floor = floor;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public double getRentPrice() {
+        return rentPrice;
+    }
+
+    public void setRentPrice(double rentPrice) {
+        this.rentPrice = rentPrice;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
 }

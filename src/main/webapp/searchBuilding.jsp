@@ -1,11 +1,11 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Building</title>
+    <title>Tìm Kiếm Tòa Nhà</title>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -78,40 +78,6 @@
             background-color: #555;
         }
 
-        .building-list table {
-            width: 100%;
-            margin: 1rem 0;
-            border-collapse: collapse;
-        }
-
-        .building-list table th, .building-list table td {
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-
-        .building-list table th {
-            background-color: #333;
-            color: white;
-        }
-
-        .building-list table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .building-list table tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .building-list .actions a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .building-list .actions a:hover {
-            text-decoration: underline;
-        }
-
         .form-container {
             background-color: #fff;
             padding: 2rem;
@@ -125,7 +91,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .form-container input, .form-container textarea {
+        .form-container input {
             width: 100%;
             padding: 0.8rem;
             margin-bottom: 1rem;
@@ -150,29 +116,29 @@
 </head>
 <body>
 <header>
-    <h1>Search Building</h1>
+    <h1>Tìm Kiếm Tòa Nhà</h1>
     <nav>
-        <a href="buildings">Back to List</a>
+        <a href="buildings">Quay Lại Danh Sách</a>
     </nav>
 </header>
 
 <section class="form-container">
-    <form action="buildings" method="get">
-        <label for="type">Building Type:</label>
+    <form action="addbuilding" method="get">
+        <label for="type">Loại Tòa Nhà:</label>
         <input type="text" id="type" name="type">
 
-        <label for="minRentPrice">Min Rent Price:</label>
+        <label for="minRentPrice">Giá Thuê Tối Thiểu:</label>
         <input type="number" id="minRentPrice" name="minRentPrice">
 
-        <label for="maxRentPrice">Max Rent Price:</label>
+        <label for="maxRentPrice">Giá Thuê Tối Đa:</label>
         <input type="number" id="maxRentPrice" name="maxRentPrice">
 
-        <button type="submit">Search</button>
+        <button type="submit">Tìm Kiếm</button>
     </form>
 </section>
 
 <footer>
-    <p>&copy; 2025 Building Management System</p>
+    <p>&copy; 2025 Hệ Thống Quản Lý Tòa Nhà</p>
 </footer>
 </body>
 </html>

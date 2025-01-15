@@ -1,4 +1,4 @@
-package repository;
+package servlet;
 
 import connect.BaseRepository;
 
@@ -12,7 +12,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-@WebServlet("/addBuilding")
+@WebServlet("/addbuilding")
 public class AddBuildingServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String code = request.getParameter("code");

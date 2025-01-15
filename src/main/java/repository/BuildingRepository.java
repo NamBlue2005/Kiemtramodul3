@@ -33,7 +33,7 @@ public class BuildingRepository {
                 buildings.add(building);
             }
         } catch (SQLException e) {
-            e.printStackTrace();  // Log exception
+            e.printStackTrace();
         }
         return buildings;
     }

@@ -20,7 +20,7 @@ public class BuildingServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Building> buildingList = BuildingRepository.getAllBuildings();
-        buildingList.sort((b1, b2) -> Double.compare(b1.getArea(), b2.getArea()));  // Sort by area
+        buildingList.sort((b1, b2) -> Double.compare(b1.getArea(), b2.getArea()));
         request.setAttribute("buildings", buildingList);
         request.getRequestDispatcher("building-list.jsp").forward(request, response);
     }
@@ -50,7 +50,6 @@ public class BuildingServlet extends HttpServlet {
         try {
             Building building = extractBuildingFromRequest(request);
 
-            // Validate inputs
             if (building.getArea() < 20 || building.getRentPrice() <= 1000000) {
                 response.getWriter().println("Invalid area or rent price.");
                 return;
@@ -65,7 +64,7 @@ public class BuildingServlet extends HttpServlet {
             response.sendRedirect("buildings");
         } catch (Exception e) {
             response.getWriter().println("Error adding building.");
-            e.printStackTrace();  // Optional: Log the exception for debugging purposes
+            e.printStackTrace();
         }
     }
 
@@ -101,7 +100,7 @@ public class BuildingServlet extends HttpServlet {
             response.sendRedirect("buildings");
         } catch (Exception e) {
             response.getWriter().println("Error deleting building.");
-            e.printStackTrace();  // Optional: Log the exception for debugging purposes
+            e.printStackTrace();
         }
     }
 
